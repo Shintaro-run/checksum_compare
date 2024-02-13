@@ -14,14 +14,18 @@ This script calculates and compares the checksums of an ISO file and a USB devic
    ```bash
    chmod +x checksum_compare.sh
 
+2. Type the password in case the dd process requires the permission:
+   ```bash
+   sudo -v
+
 2. Run the script:
    ```bash
-   Run the script:
+   ./checksum_compare.sh
 
 The script uses predefined paths for the ISO file and USB device identifier, which you can modify within the script as needed.
+
 📋 Prerequisites
 The pv command must be installed. You can install it with brew install pv. 🍺
-
 Designed with macOS in mind, but it may work on other UNIX-like systems if the necessary commands are available. 🐧
 
 📝 Notes
@@ -29,7 +33,6 @@ The script uses sudo to calculate the checksum of the USB device, so you may be 
 
 💬 Contact
 For questions or feedback, please reach out through my GitHub page:
-
 https://github.com/Shintaro-run 💌
 
 📄 License
